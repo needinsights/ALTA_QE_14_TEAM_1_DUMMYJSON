@@ -27,4 +27,9 @@ public class PutUpdateTodoStepDef {
     }
 
 
+    @Given("Update todo with invalid json {string}")
+    public void updateTodoWithInvalidJson(String json) {
+        File jsonFile = new File(Constants.REQ_BODY + json);
+        todosAPI.putUpdateTodo(jsonFile);
+    }
 }

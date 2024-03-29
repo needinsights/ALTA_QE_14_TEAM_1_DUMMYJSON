@@ -20,4 +20,9 @@ public class getLimitAndSkipTodosStepDef {
     public void sendRequestGetSkipTodo() {
         SerenityRest.when().get(TodosAPI.LIMIT_AND_SKIP_TODO);
     }
+
+    @Given("Get limit and skip todos with invalid parameter limit {int} and skip {int}")
+    public void getLimitAndSkipTodosWithInvalidParameterLimitAndSkip(int limit, int skip) {
+        todosAPI.getLimitAndSkip(limit, skip);
+    }
 }
