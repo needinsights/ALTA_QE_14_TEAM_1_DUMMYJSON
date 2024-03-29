@@ -9,6 +9,7 @@ Feature: Get Carts of a user
     Then Status code should be 200
     And Validate json schema "GetCartOfUserValidJsonSchema.json"
 
+  @Project
 #    Negative
   Scenario: Get carts of a user with invalid parameter id
     Given Get carts of a user with invalid parameter "@limo"

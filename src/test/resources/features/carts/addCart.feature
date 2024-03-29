@@ -1,7 +1,7 @@
 Feature: Post a new cart
   Add a new cart with valid json
 
-  @Tugas
+  @Project
 #    Positive
   Scenario: Add a new carts with valid json
     Given Post a new carts with valid json "postAddCart.json"
@@ -9,6 +9,7 @@ Feature: Post a new cart
     Then Status code should be 200
     And Validate json schema "PostAddCartJsonSchema.json"
 
+  @Project
 #    Negative
   Scenario: Add a new carts with invalid json
     Given Post a new carts with invalid json "PostAddCartInvalid.json"

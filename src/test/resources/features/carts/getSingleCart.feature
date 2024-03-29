@@ -9,7 +9,9 @@ Feature: Get single cart
     Then Status code should be 200
     And Validate json schema "getSingleCartValidJsonSchema.json"
 
-#  Negative
+
+  @Project
+#   Negative
   Scenario: Get single cart with invalid parameter id
     Given Get single cart with invalid parameter id 2400
     When Send request to get single cart

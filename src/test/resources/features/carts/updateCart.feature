@@ -9,6 +9,7 @@ Feature: Update a cart
     Then Status code should be 200
     And Validate json schema "PutUpdateCartValidJsonSchema.json"
 
+  @Project
 #   Negative
   Scenario: Update a cart with invalid json and valid parameter id
     Given Put update a cart with invalid json "PutUpdateCartInvalid.json" and parameter id 1
