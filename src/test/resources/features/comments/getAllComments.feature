@@ -5,5 +5,5 @@ Feature: Get All Comments
     Given Get all comments with valid parameter
     When Send request get all comments
     Then Status code should be 200
-    And  Validate json Schema "getAllCommentsSchema.json"
+    And  Validate json schema "getAllCommentsSchema.json"
 

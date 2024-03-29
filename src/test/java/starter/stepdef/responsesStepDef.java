@@ -28,7 +28,7 @@ public class responsesStepDef {
         SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(jsonFile));
     }
 
-    @And("Response body name should be userid {} and idProduct {}")
+    @And("Response body name should be userid {int}")
     public void responseBodyNameShouldBeUseridAndIdProduct(String userid) {
         SerenityRest.and()
                 .body(CartsResponses.USERID, equalTo(userid));
