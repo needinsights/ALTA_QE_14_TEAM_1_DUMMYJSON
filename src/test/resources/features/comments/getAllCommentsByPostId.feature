@@ -14,7 +14,7 @@ Feature: Get Comment by PostId
     When send request to get Comment by PostId
     Then Status code should be 404
     Examples:
-      |  id  |
-      |   0  |
-      |  600 |
+      | id  |
+      | 0   |
+      | 600 |
 

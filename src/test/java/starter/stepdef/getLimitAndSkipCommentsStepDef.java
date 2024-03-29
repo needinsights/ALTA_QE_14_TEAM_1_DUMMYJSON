@@ -10,9 +10,10 @@ import starter.dummyjson.CommentsAPI;
 public class getLimitAndSkipCommentsStepDef {
     @Steps
     CommentsAPI commentsAPI;
+
     @Given("Get limit and skip comments with valid parameter limit {int} and skip {int}")
     public void getLimitAndSkipCommentsWithValidParameterLimitLimitAndSkipSkip(int limit, int skip) {
-        commentsAPI.getLimitAndSkip(limit , skip);
+        commentsAPI.getLimitAndSkip(limit, skip);
     }
 
     @When("Send request get skip comments")
@@ -22,6 +23,6 @@ public class getLimitAndSkipCommentsStepDef {
 
     @Given("Get limit and skip comments with invalid parameter limit {int} and skip {int}")
     public void getLimitAndSkipCommentsWithInvalidParameterLimitLimitAndSkipSkip(int limit, int skip) {
-        commentsAPI.getLimitAndSkip(limit , skip);
+        commentsAPI.getLimitAndSkip(limit, skip);
     }
 }

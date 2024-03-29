@@ -14,6 +14,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class getAllCommentsbyPostIdStepDef {
     @Steps
     CommentsAPI commentsAPI;
+
     @Given("Get all comments by PostId {int}")
     public void getAllCommentByPostId(int id) {
         commentsAPI.getAllCommentsByPostId(id);

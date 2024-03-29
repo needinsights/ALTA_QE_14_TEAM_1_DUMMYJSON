@@ -11,7 +11,7 @@ import java.io.File;
 public class postAddCommentStepDef {
     @Given("Add a comment with valid json {string}")
     public void addACommentWithValidJson(String json) {
-        File jsonFIle = new File(Constants.REQ_BODY+json);
+        File jsonFIle = new File(Constants.REQ_BODY + json);
     }
 
     @When("Send request post add comment")
@@ -22,6 +22,6 @@ public class postAddCommentStepDef {
     // Negative
     @Given("Add a comment with invalid json {string}")
     public void addACommentWithinValidJson(String json) {
-        File jsonFIle = new File(Constants.REQ_BODY+json);
+        File jsonFIle = new File(Constants.REQ_BODY + json);
     }
 }

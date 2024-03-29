@@ -15,6 +15,7 @@ public class deleteCommentStepDef {
     public void deleteComment(int id) {
         commentsAPI.deleteComment(id);
     }
+
     @When("Send request to delete comment")
     public void sendRequestToDeleteComment() {
         SerenityRest.when().delete(CommentsAPI.DELETE_COMMENT);

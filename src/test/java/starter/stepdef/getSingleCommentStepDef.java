@@ -14,6 +14,7 @@ public class getSingleCommentStepDef {
     public void getSingleCommentWithValidId(int id) {
         commentsAPI.getSingleComments(id);
     }
+
     @When("Send request to get single comment")
     public void sendRequestToGetSingleComment() {
         SerenityRest.when()

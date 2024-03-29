@@ -14,6 +14,7 @@ public class getAllCommentsStepDef {
     public void getAllCommentsWithValidParameter() {
         commentsAPI.getAllComments();
     }
+
     @When("Send request get all comments")
     public void sendRequestGetAllComments() {
         SerenityRest.when().get(CommentsAPI.GET_ALL_COMMENTS);
